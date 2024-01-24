@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(8, 8, 8);
+    font-family: 'ITC Benguiat', sans-serif;
+}
+
+p {
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+#page-title {
+    /* color:red; */
+}
+
+ul {
+    margin: 2rem 0 2rem 0;
+    padding: 1rem;
+    border: 3px solid #FFFFFF;
+    border-radius: 15px 15px 15px 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.quote-block {
+    margin: 0rem 2rem 0rem 2rem;
+    padding: 0 2rem 0 2rem;
+}
+
+.speaker {
+    margin: 20px 10px 10px 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.quote {
+    margin: 10px 10px 20px 10px;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+#dana::before {
+    background-image: url("dana.jpeg");
+}
+
+#mayor::before {
+    background-image: url("mayor.jpeg");
+}
+
+#table::before {
+    background-image: url("table.jpg");
+}
+
+
+.image-container {
+    position: relative;
+    margin: 0 3rem 0 3rem;
+}
+
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+h1 {
+    color: #AB9F8F;
+    margin: 2rem;
+    font-size: 2.2rem;
+}
+
+h2 {
+    color: #AB9F8F;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
