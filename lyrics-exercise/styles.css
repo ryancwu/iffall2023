@@ -69,4 +69,7 @@ p {
 
 .wasted {
   color: #c6b16e;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 550;
 }
