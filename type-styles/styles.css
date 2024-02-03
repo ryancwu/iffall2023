@@ -1,0 +1,89 @@
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: sans-serif;
+    margin-left: 3rem;
+    background-color: black;
+    color: white;
+}
+
+div {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: .8rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+    color: #A51417;
+}
+
+h3 {
+    font-size: 1rem;
+    margin-bottom: .3rem;
+    color: #a51416d1;
+    font-weight: 450;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.style-text {
+    font-family: 'Ubuntu';
+}
+
+.normal {
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.narrow {
+    letter-spacing: -.06em;
+}
+
+.wide {
+    letter-spacing: .3em;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
