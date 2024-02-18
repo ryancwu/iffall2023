@@ -11,6 +11,7 @@ h1, h2, h3, p, li, a {
 
 a {
     font-size: 1.3rem;
+    text-decoration: underline;
 }
 
 li {
@@ -38,7 +39,7 @@ a:hover {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
 
