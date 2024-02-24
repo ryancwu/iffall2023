@@ -75,51 +75,39 @@
         </ol>
 
         <ul class="grid using-inline-block">
+            <!-- Add copies of the <li> element here, and change the names. (We can use the generic portait image for everybody.) -->
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-                <div>Abram Siemsen</div>
-            </li>
-            <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-                <div>Abram Siemsen</div>
-            </li>
-            <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
-                <div>Abram Siemsen</div>
-            </li>
-            <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person A portrait">
                 <div>Person A</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person B portrait">
                 <div>Person B</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person C portrait">
                 <div>Person C</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person D portrait">
                 <div>Person D</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person E portrait">
                 <div>Person E</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person F portrait">
                 <div>Person F</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person G portrait">
                 <div>Person G</div>
             </li>
             <li>
-                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Abram Siemsen portrait">
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person H portrait">
                 <div>Person H</div>
             </li>
-            <!-- Add copies of the <li> element here, and change the names. (We can use the generic portait image for everybody.) -->
         </ul>
 
         <p>Okay, let's get these images under control so we can see what we're doing.</p>
@@ -146,6 +134,22 @@
         <ol class="instructions">
             <li>For this grid's <code class="tag">li</code> elements, set <code>display: inline-block;</code>. Be sure
                 you aren't styling using the shared <code>.grid li</code> selector!</li>
+        </ol>
+
+        <p>At this point, our grid starts to look like it makes sense. But lets take a few more steps to tidy things up.
+            We'll apply these rules using the shared <code>grid</code> class, so we don't have to do them again for the
+            next grid.</p>
+
+        <ol class="instructions">
+            <li>You should have already created a selector for <code>.grid li</code>, now add the following rules:</li>
+            <li><code>width: 25%;</code> Should ensures our grid is "4-up" (25% * 4 = 100% of the available width).</li>
+            <li><code>text-align: center;</code> Centers the image and name within each box.</li>
+            <li><code>font-size: 0.8rem;</code> Makes the text a bit smaller.</li>
+            <li><code>margin-bottom: 1rem;</code> Adds some space below each item.</li>
+            <li>Finally, in your selector for the <code class="tag">img</code>, change the width to
+                <code>width: 90%;</code>. This means "be 90% the width of your parent." The parent <code>li</code> is
+                25% of the total page width. This ensures the image has a bit of space on either side within its parent
+                item, even on small devices.</li>
         </ol>
 
         <p>This grid is shaping up fairly quickly, but there's one quirk. Our shared styles say the <code
@@ -189,6 +193,41 @@
         </ol>
 
         <!-- <ul class="grid using-flex">...</ul> goes here -->
+        <ul class="grid using-flex">
+            <!-- Add copies of the <li> element here, and change the names. (We can use the generic portait image for everybody.) -->
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person A portrait">
+                <div>Person A</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person B portrait">
+                <div>Person B</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person C portrait">
+                <div>Person C</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person D portrait">
+                <div>Person D</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person E portrait">
+                <div>Person E</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person F portrait">
+                <div>Person F</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person G portrait">
+                <div>Person G</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person H portrait">
+                <div>Person H</div>
+            </li>
+        </ul>
 
         <p>Look, we picked up a bunch of existing styles from the shared <code>grid</code> class, so our images are
             already sized, the text is centered, etc. Hurray for shared classes to avoid repetition!</p>
@@ -223,6 +262,41 @@
         </ol>
 
         <!-- <ul class="grid using-grid">...</ul> goes here -->
+        <ul class="grid using-grid">
+            <!-- Add copies of the <li> element here, and change the names. (We can use the generic portait image for everybody.) -->
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person A portrait">
+                <div>Person A</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person B portrait">
+                <div>Person B</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person C portrait">
+                <div>Person C</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person D portrait">
+                <div>Person D</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person E portrait">
+                <div>Person E</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person F portrait">
+                <div>Person F</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person G portrait">
+                <div>Person G</div>
+            </li>
+            <li>
+                <img src="http://wudesign.me/resources/basic-layout/images/portrait.png" alt="Person H portrait">
+                <div>Person H</div>
+            </li>
+        </ul>
 
         <ol class="instructions">
             <li>Create a selector for this grid's <code class="tag">ul</code> using it's specific class, and add the
