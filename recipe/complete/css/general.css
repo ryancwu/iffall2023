@@ -1,0 +1,43 @@
+/* TODO: DARK BLUE */
+/* TODO: Change font size by screen size */
+/* TODO: select similar to times, japanese font */
+
+/* 
+ * Default styles 
+ */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  margin: 0 20px 20px 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+/* 
+ * Mobile Mode general styles
+ */
+@media (max-width: 949px) {
+  body {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+/* 
+ * Desktop Mode general styles
+ */
+@media (min-width: 950px) {
+  .section {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}

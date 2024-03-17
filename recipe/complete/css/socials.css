@@ -1,0 +1,30 @@
+/*
+ * CSS for socials styles
+ */
+
+ /* TODO: Adjust alignment to top */
+ .socials {
+    display: flex;
+    flex-direction: column; /* Arrange items in a vertical column */
+    align-items: center; /* Align items horizontally */
+  }
+  
+  .icon-container .fa-solid {
+    display: none;
+  }
+  
+  .icon-container:hover .fa-regular {
+    display: none;
+  }
+  
+  .icon-container:active .fa-regular {
+    display: none;
+  }
+  
+  .icon-container:hover .fa-solid {
+    display: inline-block;
+  }
+  
+  .icon-container:active .fa-solid {
+    display: inline-block;
+  }

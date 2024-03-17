@@ -1,0 +1,15 @@
+/* CSS for Description and Notes sections */
+
+@media (min-width: 950px) {
+  .description img {
+    float: right;
+    margin-left: 20px;
+    width: 50%;
+  }
+
+  .notes img {
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+  }
+}

@@ -1,0 +1,73 @@
+/*
+ * CSS for the header
+ */
+
+header {
+  margin: 2rem 0 5rem 0;
+}
+
+.recipe-info {
+  position: relative;
+  top: 0;
+  margin-left: 10%;
+}
+
+.recipe-info .left-div {
+  position: relative;
+  padding-right: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  z-index: 1;
+  white-space: nowrap;
+  width: 1rem;
+}
+
+.recipe-info .right-div {
+  flex: 1;
+}
+
+.recipe-info .left-div p {
+  margin: 0;
+  font-size: 1rem;
+  transform-origin: top right;
+  transform: rotate(-90deg) translateY(-100%) translateX(-1000%);
+}
+
+/* Header style for smaller screens mode */
+@media (max-width: 949px) {
+  header {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Header style for desktop mode */
+@media (min-width: 950px) {
+  header {
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem 0;
+  }
+  .title-img {
+    width: 45%;
+    position: relative;
+    left: 0;
+  }
+  .recipe-info .left-div p {
+    font-size: 120%;
+  }
+}
+
+/* Header style wide desktop */
+@media (min-width: 1025px) {
+  .recipe-info {
+    position: relative;
+    width: 50%;
+  }
+
+  .recipe-info .left-div p {
+    font-size: 145%;
+  }
+}
