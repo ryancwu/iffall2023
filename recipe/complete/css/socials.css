@@ -2,7 +2,8 @@
  * CSS for socials styles
  */
 
- /* TODO: Adjust alignment to top */
+ /* TODO: Adjust mobile position */
+ /* TODO: Increase size */
  .socials {
     display: flex;
     flex-direction: column; /* Arrange items in a vertical column */

@@ -10,8 +10,13 @@
   padding: 0;
 }
 
+.b-i-style {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .section {
-  margin: 0 20px 20px 20px;
+  margin: 0 20px 5rem 20px;
 }
 
 img {
