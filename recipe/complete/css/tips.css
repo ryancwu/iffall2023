@@ -21,10 +21,12 @@
 
 .serving {
   background-image: url("/Users/ryanwu/Documents/WashU/CSE/ifspring2024/recipe/complete/images/serving.jpeg");
+  border-radius: 2% 2% 2% 0;
 }
 
 .storing {
   background-image: url("/Users/ryanwu/Documents/WashU/CSE/ifspring2024/recipe/complete/images/storing.jpeg");
+  border-radius: 2% 2% 0 2%;
 }
 
 .serving::before,
@@ -39,6 +41,14 @@
   backdrop-filter: blur(2px);
   z-index: 1;
 }
+
+.serving::before {
+  border-radius: 2% 2% 2% 0;
+}
+.storing::before {
+  border-radius: 2% 2% 0 2%;
+}
+
 
 .serving h3,
 .serving p,

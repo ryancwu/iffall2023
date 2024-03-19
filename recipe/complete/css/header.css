@@ -41,19 +41,6 @@ header img {
   margin: 10px 0 10px 0;
 }
 
-.socials {
-  position: relative;
-  top: 0;
-  left: 45%;
-}
-
-@media (max-width: 320px) {
-  .socials {
-    top: -60px;
-    transform: scale(1.1);
-  }
-}
-
 /* Header style for smaller screens mode */
 @media (max-width: 949px) {
   header {
@@ -102,12 +89,7 @@ header img {
   }
 
   .recipe-info {
-    left: 0;
-  }
-  .socials {
-    position: relative;
-    top: 6rem;
-    left: -1rem;
+    left: 5rem;
   }
 }
 
