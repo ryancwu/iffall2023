@@ -22,7 +22,8 @@
 .prep-item img {
   height: auto;
   width: 100%;
-  max-height: calc(100% - 20px);
+  max-height: 300px;
+  object-fit: cover;
 }
 
 .prep-name {
@@ -38,6 +39,10 @@
 .instruction-section {
   border: 1px solid #000; /* TODO: REMOVE */
 }
+
+/* .mise {
+  padding
+} */
 
 /* prep-item style desktop mode  */
 @media (min-width: 950px) {

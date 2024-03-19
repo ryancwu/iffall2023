@@ -25,9 +25,8 @@
   width: 100%;
 }
 
-/* TODO: input and label padding */
 .ingredient input {
-  transform: scale(1.5);
+  transform: scale(1.8);
 }
 
 /* Ingredient style desktop mode  */
@@ -106,6 +105,7 @@
   .name {
     display: block;
     text-align: center;
+    padding: 10px 0 8px 0;
   }
 }
 

@@ -5,11 +5,35 @@
     float: right;
     margin-left: 20px;
     width: 50%;
+    max-height: 40vh;
   }
 
   .notes img {
     float: left;
     margin-right: 20px;
     width: 50%;
+    max-height: 40vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .description img {
+    float: right;
+    width: 60%;
+    max-height: 50vh;
+    margin-left: 15px;
+  }
+
+  .notes img {
+    float: left;
+    margin-right: 20px;
+    width: 50%;
+    max-height: 40vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .notes {
+    margin-bottom: 10rem;
   }
 }
