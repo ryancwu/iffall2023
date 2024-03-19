@@ -6,10 +6,13 @@ header {
   margin: 2rem 0 5rem 0;
 }
 
+header img {
+  margin-top: 2rem;
+}
+
 .recipe-info {
   position: relative;
   top: 0;
-  margin-left: 10%;
 }
 
 .recipe-info .left-div {
@@ -34,6 +37,23 @@ header {
   transform: rotate(-90deg) translateY(-100%) translateX(-1000%);
 }
 
+.info-wrapper {
+  margin: 10px 0 10px 0;
+}
+
+.socials {
+  position: relative;
+  top: 0;
+  left: 45%;
+}
+
+@media (max-width: 320px) {
+  .socials {
+    top: -60px;
+    transform: scale(1.1);
+  }
+}
+
 /* Header style for smaller screens mode */
 @media (max-width: 949px) {
   header {
@@ -43,12 +63,31 @@ header {
   }
 }
 
+@media (min-width: 768px) {
+  header {
+    position: relative;
+    margin-top: 10rem;
+  }
+
+  .recipe-info {
+    position: relative;
+    top: 0;
+    left: -5rem;
+  }
+
+  .socials {
+    position: relative;
+    top: 0.2rem;
+    left: 6rem;
+    transform: scale(1.2);
+  }
+}
+
 /* Header style for desktop mode */
 @media (min-width: 950px) {
   header {
     justify-content: space-between;
     align-items: center;
-    margin: 5rem 0;
   }
   .title-img {
     width: 45%;
@@ -56,7 +95,19 @@ header {
     left: 0;
   }
   .recipe-info .left-div p {
-    font-size: 120%;
+    font-size: 110%;
+  }
+  .recipe-info .right-div p {
+    font-size: 18px;
+  }
+
+  .recipe-info {
+    left: 0;
+  }
+  .socials {
+    position: relative;
+    top: 6rem;
+    left: -1rem;
   }
 }
 
@@ -68,6 +119,10 @@ header {
   }
 
   .recipe-info .left-div p {
-    font-size: 145%;
+    font-size: 140%;
+  }
+
+  .recipe-info .right-div p {
+    font-size: 20px;
   }
 }

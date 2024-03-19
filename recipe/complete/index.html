@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ryan's Claypot Rice Recipe</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Neuton:ital,wght@0,200;0,300;0,400;0,700;0,800;1,400&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/socials.css">
@@ -16,7 +21,7 @@
 </head>
 
 <body>
-    <header class="section flex">
+    <header class="section flex special-top">
         <img src="images/fulldish.jpeg" alt="fulldish" class="title-img">
         <div class="recipe-info flex">
             <div class="left-div">
@@ -24,16 +29,17 @@
             </div>
             <div class="right-div">
                 <h1>Claypot Rice Recipe</h1>
-                <div class="time">
-                    <p class="info"><i class="icon fa-regular fa-clock"></i>Time: 1 hour</p>
-                </div>
-                <div class="difficulty">
-                    <p class="info"><i class="icon fa-regular fa-star"></i>Difficulty: Hard</p>
+                <div class="info-wrapper">
+                    <div class="time">
+                        <p class="info"><i class="icon fa-regular fa-clock"></i>Time: 1 hour</p>
+                    </div>
+                    <div class="difficulty">
+                        <p class="info"><i class="icon fa-regular fa-star"></i>Difficulty: Hard</p>
 
-                </div>
-                <div class="servings">
-                    <p class="info"><i class="icon fa-solid fa-bowl-rice"></i>Serves: 1</p>
-
+                    </div>
+                    <div class="servings">
+                        <p class="info"><i class="icon fa-solid fa-bowl-rice"></i>Serves: 1</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -52,9 +58,9 @@
     <div class="section description">
         <h2>Description</h2>
         <div class="content">
+            <img src="images/claypotstreet.jpeg" alt="claypotstreet">
             <!-- TODO: make easier to read -->
             <p>
-                <img src="images/claypotstreet.jpeg" alt="claypotstreet">
                 Claypot Rice (or bo zai fan in Cantonese) is a humble rich dish with an incredibly deep and complex
                 flavor profile. We can trace the modern claypot rice dish to ancient China where people used claypots
                 over fire, traditionally charcoal to cook rice. By using a claypot, we can infuse the rice with rich
@@ -81,22 +87,22 @@
             <img src="images/kitchenclaypot.jpeg" alt="kitchenclaypot">
             <ul>
                 <li>
-                    <p>I would suggest getting a <a
+                    I would suggest getting a <a
                             src="https://www.amazon.com/Veemoon-Stockpots-Traditional-Convenient-Multi-functional/dp/B0BW9VSQ6N/ref=asc_df_B0BW9VSQ6N/?tag=hyprod-20&linkCode=df0&hvadid=673728384183&hvpos=&hvnetw=g&hvrand=13294040171923643550&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9022865&hvtargid=pla-2204545234703&psc=1&mcid=ef5b7ec2c5dd3f0e9d72e0d96d2e2a92">claypot</a>
                         especially if you have a gas stove. If you don't have a claypot and don't wish to buy one, you
-                        can use a small (~2-3 Qt) nonstick pot with a lid.</p>
+                        can use a small (~2-3 Qt) nonstick pot with a lid.
                 </li>
                 <li>
-                    <p>I would suggest you read through the entire recipe at least once before attempting to cook this
+                    I would suggest you read through the entire recipe at least once before attempting to cook this
                         dish
-                        it can be technically challenging.</p>
+                        it can be technically challenging.
                 </li>
                 <li>
-                    <p>There are times where you might want to soak or marinade ingredients while you prepare other
-                        ingredients.</p>
+                    There are times where you might want to soak or marinade ingredients while you prepare other
+                        ingredients.
                 </li>
                 <li>
-                    <p>Start an hour before serving!</p>
+                    Start an hour before serving!
                 </li>
             </ul>
         </div>
@@ -105,8 +111,8 @@
         <h2>Ingredients</h2>
         <ul class="ingredients">
             <li class="ingredient flex">
-                <img src="images/claypotex.jpeg" alt="(Jasmine) Rice">
-                <label for="rice"><span class="name">(Jasmine) Rice</span></label>
+                <img src="images/claypotex.jpeg" alt="Rice">
+                <label for="rice"><span class="name">Rice</span></label>
                 <input type="checkbox" id="rice" name="rice" value="rice" class="toggle-checkbox">
             </li>
             <li class="ingredient flex">
@@ -200,46 +206,45 @@
             <h3>Mise en Place</h3>
             <ul class="prep-list">
                 <li class="prep-item flex">
+                    <img src="images/marinade.jpeg" alt="marinade">
+                    <span class="prep-name">A. <span class="b-i-style">Make Marinade</span> from Oyster Sauce (2 tbsp)
+                        Soy Sauce (1 tbsp), Dark Soy Sauce (1 tbsp), Cornstarch (1 tsp), Cooking Wine (1 tbsp),
+                        white pepper (1/4 tsp), sugar (1/4 tsp), Sesame Oil (1 tsp).</span>
+                <li class="prep-item flex">
                     <img src="images/washrice.jpeg" alt="Rice">
-                    <span class="prep-name">A. <span class="b-i-style">Wash rice and soak</span> in hot water for 10
+                    <span class="prep-name">B. <span class="b-i-style">Wash rice and soak</span> in hot water for 10
                         minutes.
                     </span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/cutsausage.jpeg" alt="chinese-sausage">
-                    <span class="prep-name">B. <span class="b-i-style">Soak Chinese sausage</span> in hot water for 10
+                    <span class="prep-name">C. <span class="b-i-style">Soak Chinese sausage</span> in hot water for 10
                         minutes then cut into 0.5cm wide
                         bias.</span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/cutchicken.jpeg" alt="chicken">
-                    <span class="prep-name">C. <span class="b-i-style">Cut chicken</span> into 1 in. cubes
-                        and marinate with Oyster Sauce
-                        (2 tbsp) Soy Sauce (1 tbsp), Dark Soy Sauce (1 tbsp), Cornstarch (1 tsp), Cooking Wine (1 tbsp),
-                        white pepper (1/4 tsp), sugar (1/4 tsp), Sesame Oil (1 tsp).
-                        Let sit for at least 15 minutes.</span>
+                    <span class="prep-name">D. <span class="b-i-style">Cut chicken</span> into 1 in. cubes
+                        and marinate with pre-made marinade from step A for at least 15 minutes.</span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/cutmushrooms.jpeg" alt="mushrooms">
-                    <span class="prep-name">C. <span class="b-i-style">Cut mushrooms</span> into 0.5 cm slices
-                        and marinate with Oyster Sauce
-                        (2 tbsp) Soy Sauce (1 tbsp), Dark Soy Sauce (1 tbsp), Cornstarch (1 tsp), Cooking Wine (1 tbsp),
-                        white pepper (1/4 tsp), sugar (1/4 tsp), Sesame Oil (1 tsp).
-                        Let sit for at least 15 minutes.</span>
+                    <span class="prep-name">E. <span class="b-i-style">Cut mushrooms</span> into 0.5 cm slices
+                        and marinate with pre-made marinade from step A for at least 15 minutes.</span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/cutgonion.jpeg" alt="gonions">
-                    <span class="prep-name">D. <span class="b-i-style">Cut green onions</span> into thin rounds or with
+                    <span class="prep-name">F. <span class="b-i-style">Cut green onions</span> into thin rounds or with
                         a bias cut.</span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/cutginger.jpeg" alt="ginger">
-                    <span class="prep-name">E. <span class="b-i-style">Thinly slice the ginger</span> into
+                    <span class="prep-name">G. <span class="b-i-style">Thinly slice the ginger</span> into
                         Julienne.</span>
                 </li>
                 <li class="prep-item flex">
                     <img src="images/gailan.jpeg" alt="gailan">
-                    <span class="prep-name">F. <span class="b-i-style">Wash and cut Gailan.</span> Select two small
+                    <span class="prep-name">H. <span class="b-i-style">Wash and cut Gailan.</span> Select two small
                         stalks and make 1-in notch at the stem perpendicular to the cross section to allow Gailan to
                         cook evenly.</span>
                 </li>

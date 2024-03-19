@@ -10,13 +10,14 @@
   padding: 0;
 }
 
+
 .b-i-style {
   font-style: italic;
   font-weight: bold;
 }
 
 .section {
-  margin: 0 20px 5rem 20px;
+  margin: 0 20px 3rem 20px;
 }
 
 img {
@@ -25,6 +26,46 @@ img {
 
 .flex {
   display: flex;
+}
+
+.icon {
+  padding-right: 10px;
+}
+
+h1, h2, h3, p, span, li {
+  font-family: "Neuton", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 2.5rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.2rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+}
+
+p, li {
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  p, li {
+    font-size: 120%;
+  }
 }
 
 /* 
@@ -44,5 +85,23 @@ img {
   .section {
     margin-left: 10rem;
     margin-right: 10rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  h1, h2, h3 {
+    font-size: 230%;
+  }
+  p, li {
+    font-size: 130%;
+  }
+}
+
+/*
+ * < Table General styles
+ */
+@media (max-width: 767px) {
+  .section {
+    margin: 0 20px 2.5rem 20px;
   }
 }

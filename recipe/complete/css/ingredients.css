@@ -20,7 +20,7 @@
 
 .ingredient img {
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 2%;
   height: 100%;
   width: 100%;
 }
@@ -112,6 +112,14 @@
 @media (max-width: 949px) and (min-width: 426px) {
   .ingredients {
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    grid-auto-rows: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ingredients {
+    grid-template-columns: repeat(8, 1fr);
     grid-gap: 30px;
     grid-auto-rows: auto;
   }

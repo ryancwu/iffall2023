@@ -1,39 +1,52 @@
 /* CSS for Description and Notes sections */
 
-@media (min-width: 950px) {
-  .description img {
-    float: right;
-    margin-left: 20px;
-    width: 50%;
-    max-height: 40vh;
-  }
-
-  .notes img {
-    float: left;
-    margin-right: 20px;
-    width: 50%;
-    max-height: 40vh;
-  }
+.description img,
+.notes img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-height: 40vh; /* Adjust the max-height as needed */
 }
 
-@media (min-width: 768px) and (max-width: 950px) {
+.description .content,
+.notes .content {
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
   .description img {
     float: right;
-    width: 60%;
-    max-height: 50vh;
-    margin-left: 15px;
+    max-height: none; /* Reset max-height */
+    width: 50%; /* Set the width to 50% for larger screens */
+    margin-left: 20px; /* Add margin to the left for spacing */
   }
-
+  /* TODO: update icon */
   .notes img {
     float: left;
-    margin-right: 20px;
-    width: 50%;
-    max-height: 40vh;
+    max-height: none; /* Reset max-height */
+    width: 50%; /* Set the width to 50% for larger screens */
+    margin-right: 2rem; /* Add margin to the left for spacing */
   }
 }
 
 @media (min-width: 1440px) {
-  .notes {
-    margin-bottom: 10rem;
+  .description img {
+    max-height: 35vh; /* Adjust the max-height as needed for larger screens */
+    width: auto;
+  }
+
+  .notes img {
+    max-height: auto; /* Adjust the max-height as needed for larger screens */
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .description img,
+  .notes img {
+    float: none; /* Reset float */
+    width: 100%; /* Set the width to 100% for smaller screens */
+    max-height: none; /* Reset max-height */
+    margin: 0; /* Reset margin */
   }
 }
