@@ -106,3 +106,7 @@ p, li {
     margin: 0 20px 2.5rem 20px;
   }
 }
+
+footer {
+  color: hsl(210, 100%, 15%);
+}
