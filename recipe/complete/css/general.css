@@ -41,6 +41,7 @@ h1 {
   margin-bottom: 1rem;
   line-height: 2.5rem;
   font-weight: 800;
+  color: hsl(210, 100%, 15%);
 }
 
 h2 {
@@ -48,12 +49,14 @@ h2 {
   margin-bottom: 0.2rem;
   line-height: 2.5rem;
   font-weight: 600;
+  color: hsl(210, 100%, 15%);
 }
 
 h3 {
   font-size: 1.5rem;
   line-height: 2.5rem;
   font-weight: 400;
+  color: hsl(210, 100%, 15%);
 }
 
 p, li {

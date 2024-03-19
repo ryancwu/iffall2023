@@ -17,16 +17,15 @@
   padding: 5%;
   margin: 2%;
   height: 150px;
+  border-radius: 2% 2% 2% 2%;
 }
 
 .serving {
   background-image: url("/Users/ryanwu/Documents/WashU/CSE/ifspring2024/recipe/complete/images/serving.jpeg");
-  border-radius: 2% 2% 2% 0;
 }
 
 .storing {
   background-image: url("/Users/ryanwu/Documents/WashU/CSE/ifspring2024/recipe/complete/images/storing.jpeg");
-  border-radius: 2% 2% 0 2%;
 }
 
 .serving::before,
@@ -40,13 +39,7 @@
   background-color: rgb(0, 0, 0, 0.75);
   backdrop-filter: blur(2px);
   z-index: 1;
-}
-
-.serving::before {
-  border-radius: 2% 2% 2% 0;
-}
-.storing::before {
-  border-radius: 2% 2% 0 2%;
+  border-radius: 2% 2% 2% 2%;
 }
 
 
