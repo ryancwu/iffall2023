@@ -27,15 +27,6 @@
   display: inline-block;
 }
 
-@media (max-width: 425px) {
-  .socials {
-    position: relative;
-    top: -60px;
-    left: 6rem;
-    transform: scale(1.1);
-  }
-}
-
 @media (max-width: 768px) {
   .socials {
     position: relative;
@@ -50,5 +41,18 @@
     position: relative;
     top: 4rem;
     left: 1rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .socials {
+    position: relative;
+    top: -65px;
+    left: 8rem;
+    transform: scale(1.1);
+  }
+
+  .special-top {
+    margin-bottom: 0;
   }
 }
