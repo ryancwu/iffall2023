@@ -93,12 +93,21 @@
   }
 }
 
+.instruction-section img {
+  max-height: 300px;
+  object-fit: cover;
+}
+
 /* prep-item style for mobile */
 @media (max-width: 949px) {
   .prep-list {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     grid-auto-rows: auto;
+  }
+  .instruction-section img {
+    max-height: 200px;
+    object-fit: cover;
   }
 }
 
