@@ -1,0 +1,380 @@
+body {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(75, 75, 75);
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  margin: 40px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.button-container {
+  border: 1px solid #ddd;
+  margin: 0 10px 10px 0;
+  padding: 20px;
+  width: 300px;
+  height: 300px;
+  float: left;
+  overflow: hidden;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.button-container a {
+  display: inline-block;
+}
+
+a#btn_spotify {
+  display: inline-block;
+  height: 50px;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 10px 40px 0 40px;
+  background-color: #2ebd59;
+  border: 2px solid #2ebd59;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+a#btn_spotify:hover {
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+}
+
+a#btn_amazon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+  border-radius: 50px;
+  margin: auto;
+  margin-top: 75px;
+  padding-top: 8px;
+  background-color: #232f3e;
+  color: #fff;
+  text-align: center;
+  font-size: 60px;
+  transition: all 0.2s;
+}
+
+a#btn_amazon:hover {
+  background-color: #fc9a18;
+}
+
+a#btn_twitter {
+  display: inline-block;
+  height: 40px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: auto;
+  margin-top: 105px;
+  padding: 10px 30px 0 30px;
+  background-color: #56cdf1;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a#btn_twitter:hover {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2ebfec+0,28a5cb+100 */
+  background: rgb(46, 191, 236);
+  /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(46, 191, 236, 1) 0%,
+    rgba(40, 165, 203, 1) 100%
+  );
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(46, 191, 236, 1) 0%,
+    rgba(40, 165, 203, 1) 100%
+  );
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(46, 191, 236, 1) 0%,
+    rgba(40, 165, 203, 1) 100%
+  );
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ebfec', endColorstr='#28a5cb', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+}
+
+a#btn_indiegogo {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  margin-top: 100px;
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #eb1478;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: -2px;
+  transition: all 0.2s;
+}
+
+a#btn_indiegogo:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #eb1478;
+  transition: all 0.5s;
+}
+
+a#btn_indiegogo:hover {
+  color: #fff;
+}
+
+a#btn_indiegogo:hover:before {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+a#btn_indiegogo span {
+  position: relative;
+  z-index: 10;
+}
+
+/* Army styling */
+#army-container {
+  background-color: #211f20;
+}
+
+#army {
+  font-family: "Overpass", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px 0 20px 0;
+  border: 1px solid white;
+}
+
+#army span {
+  position: relative;
+  top: 7px;
+  padding-left: 5px;
+}
+
+#army img {
+  height: 60px;
+  transition: transform 1s;
+}
+
+#army .idle {
+  display: block;
+}
+
+#army .active {
+  display: none;
+}
+
+#army:hover img {
+  transform: rotate(144deg);
+}
+
+#army:hover .idle {
+  display: none;
+}
+
+#army:hover .active {
+  display: block;
+  color: #ffcc01;
+}
+
+/* Lyft styling */
+#lyft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+#lyft img {
+  height: 50px;
+  width: auto;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+#img-wrapper {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#lyft #img-wrapper:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+  top: -2rem;
+  left: 0;
+  background-color: #785ef1;
+  transition: all 0.5s;
+}
+
+#lyft:hover #img-wrapper:before {
+  width: 100%;
+}
+
+a#lyft:hover img {
+  filter: brightness(1000%);
+  transition: all 1s;
+}
+
+/* Nike style */
+#nike img {
+  position: relative;
+  height: auto;
+  width: 80%;
+  margin: auto;
+  top: 90px;
+  position: relative;
+  z-index: 2;
+  transition: filter 0.5s; /* Add transition for smooth animation */
+  filter: brightness(0);
+}
+
+#nike:hover img {
+  filter: brightness(100%);
+}
+
+/* Kittens style */
+#kittens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 15%;
+  position: relative;
+  border-radius: 2%;
+}
+
+#kittens img {
+  height: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  z-index: 2;
+  transition: transform 0.5s, margin-top 0.5s;
+  border-radius: 2%;
+}
+
+#kittens:hover img {
+  transform: translateY(-1%) rotate(360deg);
+  transition: all 1s;
+  box-shadow: 0 0 20px 5px rgba(243, 159, 56, 1);
+  border-radius: 2%;
+}
+
+/* Color Run Styles */
+#colorrun-wrapper {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  font-style: none;
+  position: relative;
+  top: 6rem
+}
+
+#colorrun-wrapper {
+  background-image: -webkit-linear-gradient(
+    left,
+    #eb008a 25%,
+    #ecdb00 50%,
+    #00aced 75%
+    #000000 100%
+  );
+  background-image: linear-gradient(
+    90deg,
+    #eb008a 25%,
+    #ecdb00 50%,
+    #00aced 75%,
+    #000000 100%
+  );
+  background-position: right center;
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: white;
+  -webkit-text-fill-color: transparent;
+  transition: color 100ms linear, background-position 1000ms ease-out; /* Add transition for smooth color change and shimmering effect */
+}
+
+#colorrun-wrapper:hover {
+  background-position: left center;
+  color: #00aced;
+}
+
+/* Sourced from: https://stackoverflow.com/questions/40242378/underline-from-left-to-right-on-hover-in-and-out  with some modifications*/
+.underline {
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -100px;
+    background: #eb008a;
+    height: 4px;
+    transition-property: left right;
+    transition-duration: .8s;
+    transition-timing-function: ease-out;
+  }
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    right: 0;
+  }
