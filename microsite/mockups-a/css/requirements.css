@@ -1,18 +1,26 @@
 @import "variables.css";
 
+.requirements {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
 .cards {
     display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
 }
 
 .card {
-    flex: 1;
     border: 1px solid var(--highlight-color);
     border-radius: 8px;
     margin: 1rem;
     padding: 20px;
     margin-bottom: 20px;
-    height: 8rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 calc(25% - 20px); /* Four cards per row */
+    height: 8rem;
+    max-width: calc(25% - 20px); /* Four cards per row */
 }
 
 .card:last-child {
@@ -37,6 +45,8 @@
     transform: translate(0, 3rem);
     transition: opacity 2s ease;
     transition: transform 0.4s;
+    width: 100%;
+    white-space: normal;
 }
 
 .card:hover p {
