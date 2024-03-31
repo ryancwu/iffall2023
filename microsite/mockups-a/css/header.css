@@ -1,0 +1,49 @@
+
+@import 'variables.css';
+
+header {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between;
+    padding: 1rem 0 1rem 0;
+}
+
+h1 {
+    width: 17rem;
+    padding-left: 1rem;
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
+}
+
+/* nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+} */
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline; /* Display list items horizontally */
+}
+
+nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: var(--med-font-size);
+    transition: text-decoration 1s ease; /* TODO: make left to right */
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+
+#banenrimg {
+    padding: 1rem 0 1rem ;
+    width: 100%;
+}

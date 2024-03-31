@@ -1,0 +1,45 @@
+@import "variables.css";
+
+.cards {
+    display: flex;
+}
+
+.card {
+    flex: 1;
+    border: 1px solid var(--highlight-color);
+    border-radius: 8px;
+    margin: 1rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 8rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
+
+.card h3 {
+    font-size: 20px;
+    color: var(--highlight-color);
+    transform: translate(0, 3rem);
+    transition: transform 0.4s;
+    margin-bottom: 0.5rem;
+}
+
+.card:hover h3 {
+    transform: translate(0, 0);
+}
+
+.card p {
+    color: var(--secondary-color);
+    opacity: 0;
+    transform: translate(0, 3rem);
+    transition: opacity 2s ease;
+    transition: transform 0.4s;
+}
+
+.card:hover p {
+    transform: translate(0, 0);
+    opacity: 1;
+}
