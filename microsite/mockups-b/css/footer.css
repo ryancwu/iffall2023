@@ -1,0 +1,77 @@
+@import "variables.css";
+
+footer h2 {
+  font-size: calc(var(--xl-font-size) + 1rem);
+  letter-spacing: 5px;
+}
+
+footer h3 {
+  font-size: var(--lrg-font-size);
+  letter-spacing: 13px;
+  position: relative;
+  top: -15px;
+}
+
+footer a {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+footer ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: var(--med-font-size);
+  transition: text-decoration 1s ease;
+}
+
+footer ul li a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+.credit {
+  font-size: var(--xsm-font-size);
+  font-weight: 800;
+}
+
+.footer-content {
+  display: flex;
+}
+
+.left-footer {
+  width: 40%;
+  margin-right: 10%;
+}
+
+.left-footer {
+  font-size: var(--xsm-font-size);
+}
+
+.links-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.left-links,
+.right-links {
+  width: auto;
+}
+
+.left-links ul li,
+.right-links ul li {
+  margin-bottom: 10px; /* Add some spacing between list items */
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .left-footer {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

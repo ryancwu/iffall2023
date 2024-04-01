@@ -1,0 +1,85 @@
+@import "variables.css";
+
+.requirements {
+  white-space: nowrap;
+}
+
+/* TODO: Q: scrollbar? */
+.cards {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid var(--highlight-color);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(25% - 20px); /* Four cards per row */
+  height: auto;
+  min-width: 30%;
+  max-width: calc(25% - 20px); /* Four cards per row */
+}
+
+.card:last-child {
+  margin-right: 0; /* Remove margin from last item */
+}
+@media (min-width: 769px) {
+  .card h3 {
+    font-size: 20px;
+    color: var(--highlight-color);
+    transform: translate(0, 3rem);
+    transition: transform 0.4s;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .card:hover h3 {
+    transform: translate(0, 0);
+  }
+
+  .card p {
+    color: var(--secondary-color);
+    opacity: 0;
+    transform: translate(0, 3rem);
+    transition: opacity 2s ease;
+    transition: transform 0.4s;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .card:hover p {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1; /* Two cards per row */
+    max-width: 100%; /* Two cards per row */
+  }
+
+  .card h3 {
+    font-size: 20px;
+    color: var(--highlight-color);
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .card p {
+    color: var(--secondary-color);
+    width: 100%;
+    white-space: normal;
+  }
+}
