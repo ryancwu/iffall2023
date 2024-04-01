@@ -1,4 +1,4 @@
-@import 'variables.css';
+@import "variables.css";
 
 * {
   margin: 0;
@@ -10,19 +10,21 @@ body {
   color: var(--secondary-color);
   font-family: "Montserrat", sans-serif;
   margin: 0 3rem 0 3rem;
+  overflow-x: hidden;
 }
 
-
-
-h1, h2, h3, nav {
-    font-family: "Bebas Neue", sans-serif;
-    font-style: normal;
-    font-size: 2rem;
-    letter-spacing: 2px;
+h1,
+h2,
+h3,
+nav {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 2px;
 }
 
 h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 ul {
@@ -30,8 +32,8 @@ ul {
 }
 
 img {
-    width: 40%;
-    height: auto;
+  width: 40%;
+  height: auto;
 }
 
 .float-right,
@@ -60,3 +62,21 @@ img {
   display: inline-block;
 }
 
+@media (max-width: 768px) {
+  .mobile-vis {
+    display: block;
+  }
+  .desktop-vis {
+    display: none;
+  }
+}
+
+/* Media query for screens larger than or equal to 768px */
+@media (min-width: 769px) {
+  .mobile-vis {
+    display: none;
+  }
+  .desktop-vis {
+    display: block;
+  }
+}
