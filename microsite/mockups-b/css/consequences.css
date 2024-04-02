@@ -1,5 +1,9 @@
 @import "variables.css";
 
+.consequences {
+  margin-top: 3rem;
+}
+
 /* TODO: Q: quote? */
 .content.quote {
   margin: 2rem 0;

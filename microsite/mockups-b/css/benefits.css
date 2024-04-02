@@ -1,5 +1,12 @@
 @import 'variables.css';
 
+.benefits {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 3rem;
+    margin: 0;
+}
+
 .benefits ul {
     width: 90%;
 }

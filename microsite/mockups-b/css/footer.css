@@ -1,5 +1,16 @@
 @import "variables.css";
 
+footer {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 3rem;
+  margin: 0;
+}
+
+footer .section {
+  margin: 0;
+}
+
 footer h2 {
   font-size: calc(var(--xl-font-size) + 1rem);
   letter-spacing: 5px;
@@ -15,11 +26,10 @@ footer h3 {
 footer a {
   font-family: "Bebas Neue", sans-serif;
   text-decoration: none;
-  color: var(--secondary-color);
 }
 
 footer ul li a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   margin-left: 10px;
   font-size: var(--med-font-size);

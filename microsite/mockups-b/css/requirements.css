@@ -1,6 +1,7 @@
 @import "variables.css";
 
 .requirements {
+  margin-top: 3rem;
   white-space: nowrap;
 }
 
