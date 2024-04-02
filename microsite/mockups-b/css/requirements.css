@@ -84,3 +84,8 @@
     white-space: normal;
   }
 }
+
+.fa-ellipsis {
+  position: absolute;
+  left: 50vw;
+}
