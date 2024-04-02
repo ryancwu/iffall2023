@@ -23,16 +23,14 @@
   flex: 0 0 calc(25% - 20px); /* Four cards per row */
   height: auto;
   min-width: 30%;
-  max-width: calc(25% - 20px); /* Four cards per row */
-}
-
-.card:last-child {
-  margin-right: 0; /* Remove margin from last item */
+  max-width: 60%;
+  position: relative;
+  margin: auto;
 }
 @media (min-width: 769px) {
   .card h3 {
     font-size: 20px;
-    color: var(--highlight-color);
+    color: var(--secondary-color);
     transform: translate(0, 3rem);
     transition: transform 0.4s;
     margin-bottom: 0.5rem;

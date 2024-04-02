@@ -22,6 +22,17 @@
     <link rel="stylesheet" href="css/consequences.css">
     <script src="https://kit.fontawesome.com/9f6c0d5b9f.js" crossorigin="anonymous"></script>
 
+    <script>
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 10) {
+                $('.history').color = "red";
+            }
+            else {
+                $('.history').color = "blue";
+            }
+        }, false);
+    </script>
+
     <title>Mockup B</title>
 </head>
 
