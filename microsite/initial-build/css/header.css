@@ -1,0 +1,86 @@
+@import "variables.css";
+
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end;
+  padding: 1rem 1rem 1rem 0;
+  background-color: var(--secondary-color);
+}
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline; /* Display list items horizontally */
+}
+
+nav ul li a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-left: 10px;
+  font-size: var(--med-font-size);
+  transition: text-decoration 1s ease; /* TODO: make left to right */
+}
+
+nav ul li a:hover {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 80vh;
+  margin: 0;
+  background: url("../hold.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.cover-wrapper {
+  position: relative;
+  top: 50vh;
+  padding: 2rem 0rem 1rem 4rem;
+  background-color: var(--highlight-color);
+  width: 30%;
+}
+
+h1 {
+  position: relative;
+  color: var(--secondary-color);
+}
+
+.cover-wrapper p {
+  position: relative;
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  color: var(--secondary-color);
+  font-size: calc(var(--med-font-size) + 0.5rem);
+}
+
+@media (max-width: 768px) {
+  .cover-wrapper {
+    width: 90%;
+    padding: 2rem 0rem 1rem 2rem;
+  }
+}
+
+.scroll-arrow {
+  position: absolute;
+  left: 50%;
+  bottom: 7.5rem;
+  transform: rotate(90deg);
+  color: var(--highlight-color);
+  font-size: 2rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 100%;
+}
+
+@media (max-width: 768px) {
+  .scroll-arrow {
+    bottom: 5rem;
+  }
+}

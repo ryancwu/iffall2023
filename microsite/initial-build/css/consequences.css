@@ -1,0 +1,50 @@
+@import "variables.css";
+
+.consequences {
+  margin-top: 3rem;
+}
+
+/* TODO: Q: quote? */
+.content.quote {
+  margin: 2rem 0;
+  padding: 3rem 0 0 0;
+}
+.quote-icon {
+  font-size: 4rem;
+  width: 4rem;
+  color: var(--highlight-color);
+}
+
+.content.quote {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+}
+
+.content.quote i {
+  position: relative;
+  top: 5px;
+  margin: 0 3px 0 3px;
+
+}
+
+.content.quote p {
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1;
+  border: 1px solid var(--highlight-color);
+}
+
+@media (max-width: 768px) {
+  .quote-icon {
+    font-size: 2rem;
+    width: 2rem;
+  }
+  .content.quote i {
+    width: 10%;
+  }
+  .content.quote {
+    width: 100%;
+  }
+}
