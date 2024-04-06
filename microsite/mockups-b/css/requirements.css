@@ -27,6 +27,7 @@
   position: relative;
   margin: auto;
 }
+
 @media (min-width: 769px) {
   .card h3 {
     font-size: 20px;

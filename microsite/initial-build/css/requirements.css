@@ -27,6 +27,11 @@
   position: relative;
   margin: auto;
 }
+
+.requirements h2 {
+  margin-bottom: 1rem;
+}
+
 @media (min-width: 769px) {
   .card h3 {
     font-size: 20px;
