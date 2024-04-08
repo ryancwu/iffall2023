@@ -1,5 +1,10 @@
 @import "variables.css";
 
+
+:root {
+  --page-width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -87,4 +92,9 @@ img {
   .desktop-vis {
     display: block;
   }
+}
+
+hr {
+  width: var(--page-width);
+  margin: 0 calc((100% - var(--page-width))/2);
 }

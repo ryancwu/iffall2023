@@ -1,5 +1,9 @@
 @import "variables.css";
 
+:root {
+  --portrait-width: 10rem;
+}
+
 .consequences {
   margin-top: 3rem;
 }
@@ -19,12 +23,18 @@
   width: 70%;
   margin: 0 auto;
   display: flex;
+  align-items: center;
+}
+
+.quote-wrapper {
+  display: flex;
   align-items: flex-start;
+
 }
 
 .content.quote i {
   position: relative;
-  top: 5px;
+  top: 20px;
   margin: 0 3px 0 3px;
 
 }
@@ -47,4 +57,13 @@
   .content.quote {
     width: 100%;
   }
+}
+
+.portrait {
+  width: var(--portrait-width);
+  /* height: calc(var(--portrait-width)*1.5); */
+  height: var(--portrait-width);
+  object-fit: cover;
+  /* TODO: Border radius? */
+  border-radius: 100%;
 }
