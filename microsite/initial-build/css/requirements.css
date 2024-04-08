@@ -11,6 +11,7 @@
   display: flex;
   flex-wrap: nowrap;
   gap: 20px;
+  overflow-y: hidden;
 }
 
 .card {
@@ -69,8 +70,8 @@
   }
 
   .card {
-    flex: 1; /* Two cards per row */
-    max-width: 100%; /* Two cards per row */
+    flex: 1;
+    max-width: 100%;
   }
 
   .card h3 {

@@ -10,7 +10,7 @@
 
 .history .content .parasection {
   font-size: var(--med-font-size) - 0.2rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
 }
 
 @media (max-width: 767px) {
