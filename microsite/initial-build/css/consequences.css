@@ -67,3 +67,9 @@
   /* TODO: Border radius? */
   border-radius: 100%;
 }
+
+.quote .card p {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+}
