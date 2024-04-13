@@ -26,44 +26,22 @@
 </head>
 
 <body>
-    <!-- <header>
-        <div class="mobile-vis">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <nav class="desktop-vis">
-            <ul>
-                <li><a href="#history">History</a></li>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#requirements">Requirements</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#consequences">Consequences</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="section banner">
-        <div class="cover-wrapper">
-            <div id="cover-text">
-                <h1>Act 22 of 2012</h1>
-                <p>NO SE VENDE</p>
+    <header id="header-item">
+        <h1 id="appearing-title" style="display: none"><a href="#">Act 22 of 2012</a></h1>
+        <div class="nav-wrapper">
+            <div class="mobile-vis">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <nav class="desktop-vis">
+                <ul>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#consequences">Consequences</a></li>
+                </ul>
+            </nav>
         </div>
-        <i class="fa-solid fa-arrow-right scroll-arrow"></i>
-    </div> -->
-    <header>
-        <!-- TODO: Button functionality -->
-        <div class="mobile-vis">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <h1>Act 22 of 2012</h1>
-        <nav class="desktop-vis">
-            <ul>
-                <li><a href="#history">History</a></li>
-                <li><a href="#overview">Overview</a></li>
-                <li><a href="#requirements">Requirements</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#consequences">Consequences</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="section banner">
         <div class="cover-wrapper" id="coverWrapper">
@@ -332,13 +310,15 @@
 
     <script>
         window.addEventListener('scroll', function () {
-            var headerItem = document.getElementById('header');
-            var banner = document.querySelector('.banner');
-            if (window.pageYOffset > (banner.offsetTop + banner.offsetHeight)) {
-                var headerH1 = document.querySelector('header h1');
-                console.log(headerH1.textContent);
+            var headerItem = document.getElementById('header-item');
+            var coverWrapper = document.getElementById('coverWrapper');
+            var appearingTitle = document.getElementById('appearing-title');
+            if (window.pageYOffset > (coverWrapper.offsetTop + coverWrapper.offsetHeight - headerItem.offsetHeight - 40)) {
+                appearingTitle.setAttribute('style', 'display: block');
+                appearingTitle.setAttribute('style', 'position: fixed');
             } else {
                 console.log('on');
+                appearingTitle.setAttribute('style', 'display: none');
             }
         });
     </script>

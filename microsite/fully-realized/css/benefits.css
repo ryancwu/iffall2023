@@ -1,0 +1,26 @@
+@import 'variables.css';
+
+.benefits {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 0 3rem 0 3rem;
+    margin: 0;
+}
+
+.benefits ul {
+    width: 90%;
+}
+
+.benefits ul li{
+    padding: 1rem;
+    font-size: var(--med-font-size);
+    display: flex;
+}
+
+.fa-check {
+    color: var(--highlight-color);
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+

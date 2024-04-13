@@ -1,20 +1,49 @@
 @import "variables.css";
 
+:root {
+  --cover-wrapper-width: 30%;
+  --cover-wrapper-pad-left: 4rem;
+}
+
 header {
-  display: flex;
   position: sticky;
   top: 0;
   z-index: 10;
-  align-items: center; /* Align items vertically */
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
   justify-content: flex-end;
   padding: 1rem 1rem 1rem 0;
   background-color: var(--secondary-color);
 }
 
-header h1 {
-  color: var(--primary-color);
-  font-size: var(--xl-font-size);
+#appearing-title {
+  background-color: var(--highlight-color);
+  font-size: calc(var(--xl-font-size) - 0.5rem);
   font-family: "Bebas Neue", sans-serif;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  width: var(--cover-wrapper-width);
+  padding: .9rem 0 .5rem var(--cover-wrapper-pad-left);
+  transition: opacity 1s ease; /* transition opacity */
+}
+
+#appearing-title.show {
+  display: block; /* make it visible */
+  opacity: 1; /* fully opaque */
+}
+
+#appearing-title a {
+  color: var(--secondary-color);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--primary-color);
+
 }
 
 nav ul {
@@ -49,7 +78,7 @@ nav ul li a:hover {
 .cover-wrapper {
   position: relative;
   top: 50vh;
-  padding: 2rem 0rem 1rem 4rem;
+  padding: 2rem 0rem 1rem var(--cover-wrapper-pad-left);
   background-color: var(--highlight-color);
   width: 30%;
   z-index: 9;

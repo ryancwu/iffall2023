@@ -1,0 +1,8 @@
+@import 'variables.css';
+
+.overview {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0rem 3rem 3rem 3rem;
+}
