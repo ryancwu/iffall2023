@@ -1,7 +1,6 @@
 @import "variables.css";
 
 .requirements {
-  margin-top: 3rem;
   white-space: nowrap;
 }
 
@@ -27,10 +26,6 @@
   max-width: 60%;
   position: relative;
   margin: auto;
-}
-
-.requirements h2 {
-  margin-bottom: 1rem;
 }
 
 @media (min-width: 769px) {

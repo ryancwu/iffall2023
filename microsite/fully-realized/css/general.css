@@ -2,7 +2,7 @@
 
 
 :root {
-  --page-width: 50%;
+  --hr-width: 20%;
   --big-margin: 5rem;
   --med-margin: 3rem;
   --small-margin: 1rem;
@@ -41,6 +41,11 @@ p {
 
 h1 {
   font-size: 3rem;
+}
+
+.section h2 {
+  margin: 3rem 0rem 3rem 0rem;
+  background-color: var(--highlight-color);
 }
 
 ul {
@@ -103,10 +108,9 @@ img {
 }
 
 hr {
-  width: var(--page-width);
-  margin: 3rem calc((100% - var(--page-width))/2) 3rem calc((100% - var(--page-width))/2);
+  /* width: var(--hr-width); */
   border-color: var(--highlight-color);
-  border-radius: 5px;
+  border: 19.25px solid var(--highlight-color);
 }
 
 .border-wrap {
@@ -119,5 +123,5 @@ hr {
   flex-grow: 1;
   height: 1px;
   background-color: var(--highlight-color);
-  margin: 0 10px;
+  /* margin: 0 10px; */
 }
