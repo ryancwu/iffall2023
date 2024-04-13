@@ -71,8 +71,87 @@
   border-radius: 100%;
 }
 
-.quote .card p {
+.quote .quote-tile p {
   border: none;
   margin-left: 0;
   padding-left: 0;
+}
+
+.quote-tiles {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-y: hidden;
+}
+
+.quote-tile {
+  border: 2px solid var(--highlight-color);
+  border-radius: 8px;
+  margin: 1rem;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(25% - 20px); /* Four cards per row */
+  height: auto;
+  min-width: 30%;
+  max-width: 60%;
+  position: relative;
+  margin: auto;
+}
+
+@media (min-width: 769px) {
+  .quote-tile h3 {
+    font-size: 20px;
+    color: var(--secondary-color);
+    transform: translate(0, 3rem);
+    transition: transform 0.4s;
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .quote-tile:hover h3 {
+    transform: translate(0, 0);
+  }
+
+  .quote-tile p {
+    color: var(--secondary-color);
+    opacity: 0;
+    transform: translate(0, 3rem);
+    transition: opacity 2s ease;
+    transition: transform 0.4s;
+    width: 100%;
+    white-space: normal;
+  }
+
+  .quote-tile:hover p {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote-tiles {
+    flex-wrap: wrap;
+  }
+
+  .quote-tile {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .quote-tile h3 {
+    font-size: 20px;
+    color: var(--highlight-color);
+    margin-bottom: 0.5rem;
+    white-space: normal;
+    width: 100%;
+  }
+
+  .quote-tile p {
+    color: var(--secondary-color);
+    width: 100%;
+    white-space: normal;
+  }
 }

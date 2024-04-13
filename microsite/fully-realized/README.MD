@@ -1,10 +1,10 @@
 TODO:
 [ ] : General
     [ ] : carousel
-    [ ] : snap title to top
+    [X] : snap title to top
     [ ] : find images
     [ ] : find another quote and person
-    [ ] : set div titles
+    [X] : set div titles
     [ ] : make quote border thicker
     [ ] : add person to quote
     [ ] : update links at the bottom
@@ -12,7 +12,7 @@ TODO:
     [ ] : add variety in benefits to consequences
 
 [ ] : Desktop
-    [ ] : adjust spacing around header
+    [X] : adjust spacing around header
     [ ] : lrg
     [ ] : reg
 
