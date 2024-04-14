@@ -70,33 +70,31 @@
   position: relative;
 }
 
-@media (min-width: 769px) {
-  .quote-tile h3,
-  .quote-tile p {
-    color: var(--secondary-color);
-    white-space: normal;
-    width: 100%;
-  }
+.quote-tile h3,
+.quote-tile p {
+  color: var(--secondary-color);
+  white-space: normal;
+  width: 100%;
+}
 
-  .quote-tile h3 {
-    font-size: 20px;
-    margin-bottom: 0.5rem;
-    transform: translateY(3rem);
-    opacity: 0;
-    transition: opacity 3s ease, transform 2s;
-  }
+.quote-tile h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: opacity 3s ease, transform 2s;
+}
 
-  .quote-tile p {
-    opacity: 0;
-    transform: translateY(3rem);
-    transition: opacity 3s ease, transform 2s;
-  }
+.quote-tile p {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 3s ease, transform 2s;
+}
 
-  .quote-tile.visible h3,
-  .quote-tile.visible p {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.quote-tile.visible h3,
+.quote-tile.visible p {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
