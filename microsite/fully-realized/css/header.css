@@ -97,12 +97,18 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .cover-wrapper {
-    width: 90%;
-    padding: 2rem 0rem 1rem 2rem;
+  .banner {
+    width: 100%;
+    height: 40vh;
+    margin: 0;
+    background: url("../hold.jpeg") no-repeat fixed;
   }
-}
-@media (max-width: 768px) {
+
+  .cover-wrapper {
+    width: 85%;
+    top: 20vh;
+  }
+
   .nav-wrapper {
     display: flex;
     align-items: center;
@@ -196,5 +202,16 @@ h1 {
     height: 14rem;
     overflow: auto; /* Allow content to scroll if it exceeds the height */
     padding: 30px 10px 10px 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .cover-wrapper {
+    width: 80%;
+  }
+
+  #appearing-title {
+    width: 80%;
+    padding: 0 0 0 1rem;
   }
 }

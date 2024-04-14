@@ -95,6 +95,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .section {
+    margin: 0 1rem 2rem 1rem;
+  }
+  
   .mobile-vis {
     display: block;
   }
@@ -134,4 +138,10 @@ hr {
 
 .make-bold {
   font-weight: bold;
+}
+
+@media (min-width: 1450px) {
+  .section {
+    margin: 0 20rem;
+  }
 }

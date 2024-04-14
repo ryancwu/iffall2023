@@ -3,8 +3,6 @@
 .benefits {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 0 3rem 0 3rem;
-    margin: 0;
 }
 
 .benefits ul {
@@ -21,6 +19,16 @@
     color: var(--highlight-color);
     font-size: 1.8rem;
     margin-right: 1rem;
+}
+
+@media (max-width: 425px) {
+    #hide {
+        display: none;
+    }
+    .make-bold {
+        background-color: var(--highlight-color);
+        padding: 0.2rem;
+    }
 }
 
 

@@ -90,3 +90,9 @@
   position: absolute;
   left: 50vw;
 }
+
+@media (max-width: 767px) {
+  .card {
+    min-width: 80%;
+  }  
+}

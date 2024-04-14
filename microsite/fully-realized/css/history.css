@@ -42,3 +42,21 @@
     width: 100%;
   }
 }
+
+@media (min-width: 2560px) {
+  .parasection img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .parasection img {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .float-right, .float-left {
+    float: none;
+    width: 100%;
+  }
+}
