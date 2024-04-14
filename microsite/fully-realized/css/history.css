@@ -12,18 +12,33 @@
   font-size: var(--med-font-size) - 0.2rem;
   /* margin-bottom: 3rem; */
 }
+.parasection {
+  clear: both;
+  margin-bottom: 3rem;
+}
 
-@media (max-width: 767px) {
-  .history img {
-    width: 80%;
-    margin: 0 auto;
-    float: none;
+.parasection img {
+  max-width: 45%;
+}
+
+@media (min-width: 769px) {
+  .parasection {
     display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
+    align-items: flex-start;
   }
 
-  .history .content .parasection {
-    width: 90%;
+  .parasection img {
+    margin: 0 1rem 0 1rem;
+    width: 35%;
+  }
+
+  .parasection:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 426px) {
+  .parasection img {
+    width: 100%;
   }
 }

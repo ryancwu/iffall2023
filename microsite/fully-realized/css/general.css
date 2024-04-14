@@ -43,9 +43,10 @@ h1 {
   font-size: 3rem;
 }
 
-.section h2 {
-  margin: 3rem 0rem 3rem 0rem;
+.section h2:not(footer h2) {
+  margin: 0rem 0rem 0rem 0rem;
   background-color: var(--highlight-color);
+  text-align: center;
 }
 
 ul {
@@ -81,6 +82,11 @@ img {
 
 .section .content {
   display: inline-block;
+}
+
+.content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hide {
@@ -124,4 +130,8 @@ hr {
   height: 1px;
   background-color: var(--highlight-color);
   /* margin: 0 10px; */
+}
+
+.make-bold {
+  font-weight: bold;
 }

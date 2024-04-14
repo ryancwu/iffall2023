@@ -1,20 +1,20 @@
 TODO:
 [ ] : General
-    [ ] : carousel
+    [X] : scroll section
     [X] : snap title to top
-    [ ] : find images
-    [ ] : find another quote and person
+    [ ] : find and update images
+    [X] : find another quote and person
     [X] : set div titles
     [ ] : make quote border thicker
-    [ ] : add person to quote
+    [X] : add person to quote
     [ ] : update links at the bottom
-    [ ] : update footer text
-    [ ] : add variety in benefits to consequences
+    [X] : update footer text
+    [X] : add variety in benefits to consequences
 
 [ ] : Desktop
     [X] : adjust spacing around header
-    [ ] : lrg
-    [ ] : reg
+    [X] : lrg
+    [X] : reg
 
 [ ] : Tablet/Mobile
     [ ] : adjust spacing around header

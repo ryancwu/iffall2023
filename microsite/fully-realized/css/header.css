@@ -27,7 +27,7 @@ header {
   left: 0;
   z-index: 11;
   width: var(--cover-wrapper-width);
-  padding: .9rem 0 .5rem var(--cover-wrapper-pad-left);
+  padding: 0.9rem 0 0.5rem var(--cover-wrapper-pad-left);
   transition: opacity 1s ease; /* transition opacity */
 }
 
@@ -43,7 +43,6 @@ header {
 h1 a {
   text-decoration: none;
   color: var(--primary-color);
-
 }
 
 nav ul {
@@ -103,21 +102,99 @@ h1 {
     padding: 2rem 0rem 1rem 2rem;
   }
 }
-
-.scroll-arrow {
-  position: absolute;
-  left: 50%;
-  bottom: 7.5rem;
-  transform: rotate(90deg);
-  color: var(--highlight-color);
-  font-size: 2rem;
-  background-color: var(--secondary-color);
-  padding: 0.5rem;
-  border-radius: 100%;
-}
-
 @media (max-width: 768px) {
+  .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1rem 1rem 2.25rem 0;
+    background-color: var(--secondary-color);
+  }
   .scroll-arrow {
     bottom: 5rem;
+  }
+  #appearing-title {
+    width: 80%;
+    padding: 0.2rem 0 0.05rem var(--cover-wrapper-pad-left);
+    background-color: var(--secondary-color);
+  }
+
+  .fa-bars {
+    display: block;
+    z-index: 12;
+    color: var(--primary-color);
+  }
+
+  #appearing-title a {
+    color: var(--primary-color);
+  }
+
+  .drawer {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    width: 10rem;
+  }
+
+  .drawer .contents ul {
+    text-align: right;
+  }
+
+  .drawer .contents ul li {
+    padding-top: 10px;
+  }
+
+  .drawer .contents ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: calc(var(--med-font-size) + 0.2rem);
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+  }
+
+  .drawer button.controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    appearance: none;
+    border: none;
+    background: none;
+    width: 100%;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+  }
+
+  .drawer button.controls .fa-bars {
+    order: 2;
+    font-size: 1.5rem;
+  }
+
+  .drawer button.controls:after {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+  }
+
+  .drawer button.controls .fa {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+  }
+
+  .drawer .contents {
+    height: 0;
+    overflow: hidden; /* Ensure content is hidden when height is 0 */
+    padding: 0 10px; /* Add initial padding */
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    transition: height 0.5s, padding 0.5s; /* Specify transition for both height and padding */
+  }
+
+  .drawer.open .contents {
+    height: 14rem;
+    overflow: auto; /* Allow content to scroll if it exceeds the height */
+    padding: 30px 10px 10px 10px;
   }
 }
