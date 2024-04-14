@@ -1,34 +1,43 @@
-@import 'variables.css';
+@import "variables.css";
 
 .benefits {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .benefits ul {
-    width: 90%;
+  width: 90%;
 }
 
-.benefits ul li{
-    padding: 1rem;
-    font-size: var(--med-font-size);
-    display: flex;
+.benefits ul li {
+  padding: 1rem;
+  font-size: var(--med-font-size);
+  display: flex;
+}
+
+.benefit-item {
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: opacity 3s ease, transform 2s;
+}
+
+.benefit-item.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .fa-check {
-    color: var(--highlight-color);
-    font-size: 1.8rem;
-    margin-right: 1rem;
+  color: var(--highlight-color);
+  font-size: 1.8rem;
+  margin-right: 1rem;
 }
 
 @media (max-width: 425px) {
-    #hide {
-        display: none;
-    }
-    .make-bold {
-        background-color: var(--highlight-color);
-        padding: 0.2rem;
-    }
+  #hide {
+    display: none;
+  }
+  .make-bold {
+    background-color: var(--highlight-color);
+    padding: 0.2rem;
+  }
 }
-
-

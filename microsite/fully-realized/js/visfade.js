@@ -12,11 +12,19 @@ function isElementInViewport(el) {
 // Function to handle scroll event
 function handleScroll() {
   var quoteTiles = document.querySelectorAll(".quote-tile");
+  var benefitItems = document.querySelectorAll(".benefit-item");
   quoteTiles.forEach(function (tile) {
     if (isElementInViewport(tile)) {
       tile.classList.add("visible");
     } else {
       tile.classList.remove("visible");
+    }
+  });
+  benefitItems.forEach(function (item) {
+    if (isElementInViewport(item)) {
+      item.classList.add("visible");
+    } else {
+      item.classList.remove("visible");
     }
   });
 }
