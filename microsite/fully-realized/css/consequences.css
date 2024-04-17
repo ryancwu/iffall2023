@@ -77,7 +77,7 @@
   width: 100%;
 }
 
-.quote-tile h3 {
+/* .quote-tile h3 {
   font-size: 20px;
   margin-bottom: 0.5rem;
   transform: translateY(3rem);
@@ -95,7 +95,7 @@
 .quote-tile.visible p {
   opacity: 1;
   transform: translateY(0);
-}
+} */
 
 @media (max-width: 768px) {
   .content.quote {

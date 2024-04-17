@@ -15,17 +15,6 @@
   display: flex;
 }
 
-.benefit-item {
-    transform: translateY(3rem);
-    opacity: 0;
-    transition: opacity 3s ease, transform 2s;
-}
-
-.benefit-item.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 .fa-check {
   color: var(--highlight-color);
   font-size: 1.8rem;

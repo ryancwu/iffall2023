@@ -1,6 +1,5 @@
 @import "variables.css";
 
-
 :root {
   --hr-width: 20%;
   --big-margin: 5rem;
@@ -91,14 +90,13 @@ img {
 
 .hide {
   display: none;
-
 }
 
 @media (max-width: 768px) {
   .section {
     margin: 0 1rem 2rem 1rem;
   }
-  
+
   .mobile-vis {
     display: block;
   }
@@ -143,5 +141,17 @@ hr {
 @media (min-width: 1450px) {
   .section {
     margin: 0 20rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .visfade {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s;
+  }
+  .visfade.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
