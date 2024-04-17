@@ -46,6 +46,7 @@ h1 {
   margin: 0rem 0rem 0rem 0rem;
   background-color: var(--highlight-color);
   text-align: center;
+  padding: 1px 0;
 }
 
 ul {
