@@ -16,7 +16,9 @@ function handleScroll() {
     if (isElementInViewport(item)) {
       item.classList.add("visible");
     } else {
-      item.classList.remove("visible");
+      if (!item.classList.contains("perm")) {
+        item.classList.remove("visible");
+      }
     }
   });
 }
