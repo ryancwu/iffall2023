@@ -117,7 +117,6 @@ img {
 }
 
 hr {
-  /* width: var(--hr-width); */
   border-color: var(--highlight-color);
   border: 19.25px solid var(--highlight-color);
 }
@@ -132,7 +131,6 @@ hr {
   flex-grow: 1;
   height: 1px;
   background-color: var(--highlight-color);
-  /* margin: 0 10px; */
 }
 
 .make-bold {

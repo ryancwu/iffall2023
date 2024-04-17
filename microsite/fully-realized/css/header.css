@@ -190,13 +190,13 @@ h1 {
 
   .drawer .contents {
     height: 0;
-    overflow: hidden; /* Ensure content is hidden when height is 0 */
-    padding: 0 10px; /* Add initial padding */
+    overflow: hidden;
+    padding: 0 10px;
     box-sizing: border-box;
     width: 100%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
-    transition: height 0.5s, padding 0.5s; /* Specify transition for both height and padding */
+    transition: height 0.5s, padding 0.5s;
   }
 
   .drawer.open .contents {

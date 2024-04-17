@@ -4,7 +4,6 @@
   white-space: nowrap;
 }
 
-/* TODO: Q: scrollbar? */
 .cards {
   overflow-x: scroll;
   display: flex;
