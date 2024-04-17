@@ -1,0 +1,158 @@
+@import "variables.css";
+
+:root {
+  --hr-width: 20%;
+  --big-margin: 5rem;
+  --med-margin: 3rem;
+  --small-margin: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: "Bebas Neue", sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+p {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.section h2:not(footer h2) {
+  margin: 0rem 0rem 0rem 0rem;
+  background-color: var(--highlight-color);
+  text-align: center;
+  padding: 1px 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 40%;
+  height: auto;
+}
+
+.float-right,
+.float-left {
+  max-height: none;
+  width: 45%;
+  border-radius: 3px;
+  /* border: 2px solid var(--highlight-color); */
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.float-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.section {
+  margin: 0 3rem 2rem 3rem;
+}
+
+.section .content {
+  display: inline-block;
+}
+
+.content {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin: 0 1rem 2rem 1rem;
+  }
+
+  .mobile-vis {
+    display: block;
+  }
+  .desktop-vis {
+    display: none;
+  }
+}
+
+/* Media query for screens larger than or equal to 768px */
+@media (min-width: 769px) {
+  .mobile-vis {
+    display: none;
+  }
+  .desktop-vis {
+    display: block;
+  }
+}
+
+hr {
+  /* width: var(--hr-width); */
+  border-color: var(--highlight-color);
+  border: 19.25px solid var(--highlight-color);
+}
+
+.border-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-wrap hr {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--highlight-color);
+  /* margin: 0 10px; */
+}
+
+.make-bold {
+  font-weight: bold;
+}
+
+@media (min-width: 1450px) {
+  .section {
+    margin: 0 20rem;
+  }
+}
+
+@media (min-width: 767px) {
+  .visfade {
+    transform: translateY(2rem);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s;
+  }
+  .visfade.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

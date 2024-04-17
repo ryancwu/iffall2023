@@ -1,0 +1,146 @@
+@import "variables.css";
+
+:root {
+  --portrait-width: 10rem;
+}
+
+.consequences {
+  margin-top: 3rem;
+}
+
+/* TODO: Q: quote? */
+.content.quote {
+  margin: 0 auto;
+  padding: 3rem 0 0 0;
+  width: 70%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.portrait {
+  margin: 2rem;
+}
+
+.second {
+  flex-direction: row-reverse;
+}
+
+.content.quote p {
+  margin: 1rem;
+  padding: 1rem;
+  flex: 1;
+}
+
+#p1 {
+  border-radius: 100% 100% 0 100%;
+}
+
+#p2 {
+  border-radius: 100% 100% 100% 0;
+}
+.portrait {
+  width: var(--portrait-width);
+  height: var(--portrait-width);
+  object-fit: cover;
+}
+
+.quote .quote-tile p {
+  border: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.quote-tiles {
+  overflow-x: scroll;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-y: hidden;
+}
+
+.quote-tile {
+  border: 3px solid var(--highlight-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(246, 255, 0, 0.2);
+  flex: 0 0 calc(25% - 20px); /* Four cards per row */
+  height: auto;
+  min-width: 60%;
+  position: relative;
+}
+
+.quote-tile h3,
+.quote-tile p {
+  color: var(--secondary-color);
+  white-space: normal;
+  width: 100%;
+}
+
+/* .quote-tile h3 {
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+  transform: translateY(3rem);
+  opacity: 0;
+  transition: opacity 3s ease, transform 2s;
+}
+
+.quote-tile p {
+  opacity: 0;
+  transform: translateY(3rem);
+  transition: opacity 3s ease, transform 2s;
+}
+
+.quote-tile.visible h3,
+.quote-tile.visible p {
+  opacity: 1;
+  transform: translateY(0);
+} */
+
+@media (max-width: 768px) {
+  .content.quote {
+    width: 100%;
+  }
+
+  .quote {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .quote-tile {
+    max-width: 100%;
+  }
+
+  .portrait {
+    width: calc(var(--portrait-width) * 0.8);
+    height: calc(var(--portrait-width) * 0.8);
+    position: relative;
+    top: -12rem;
+  }
+
+  #p1,
+  #p2 {
+    display: none;
+  }
+  .user-wrapper {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically */
+  }
+
+  .user-wrapper .portrait {
+    position: relative;
+    top: 0;
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+    margin: 0 1rem 0 0;
+  }
+}
+
+@media (min-width: 768px) {
+  #hid-p1,
+  #hid-p2 {
+    display: none;
+  }
+}
