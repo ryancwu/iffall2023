@@ -15,10 +15,6 @@ function handleScroll() {
   visfadeItems.forEach(function (item) {
     if (isElementInViewport(item)) {
       item.classList.add("visible");
-    } else {
-      if (!item.classList.contains("perm")) {
-        item.classList.remove("visible");
-      }
     }
   });
 }

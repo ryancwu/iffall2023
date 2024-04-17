@@ -125,12 +125,12 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--highlight-color);
 }
 
 .border-wrap hr {
   flex-grow: 1;
   height: 1px;
-  background-color: var(--highlight-color);
 }
 
 .make-bold {
