@@ -17,9 +17,7 @@ function handleScroll() {
       item.classList.add("visible");
     }
   });
-}
-
-// test push
+} // end handleScroll
 
 window.addEventListener("scroll", handleScroll);
 
