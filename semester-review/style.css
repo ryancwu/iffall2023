@@ -1,0 +1,93 @@
+:root {
+  --highlight-color: #ffd100;
+}
+
+body {
+  margin: 0 10rem 0 10rem;
+  background-color: rgba(237, 222, 180, 0.696);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: "Special Elite", system-ui;
+  font-weight: 800;
+  font-style: bold;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-family: "Special Elite", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.5;
+  padding: 1rem;
+}
+
+mark {
+  background-color: black;
+}
+
+.project-block {
+  margin-bottom: 1rem;
+}
+
+img {
+  height: 30vh;
+  transition: transform 0.5s;
+  text-align: center;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.float-right,
+.float-left {
+  max-height: none;
+  width: 45%;
+  border-radius: 3px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 4rem;
+}
+
+.float-left {
+  float: left;
+  margin-right: 4rem;
+}
+
+.content-wrap {
+  padding: 3rem;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.content-wrap:hover mark {
+  /* background-color: white; */
+  background-color: white;
+  padding: 10px;
+}
